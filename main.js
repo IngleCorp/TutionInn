@@ -1,6 +1,14 @@
 var flag = false;
 function addClass() {
-    var flag = true;
+    flag = !flag;
     var v = document.getElementById("body");
-    v.className += "addCSS";
+    if(flag== true){
+        v.className += "addCSS";
+    }
+    else {
+        v.className -= "addCSS";
+    }
+    
+    console.log(flag)
 }
+
