@@ -1,0 +1,121 @@
+@media screen and (max-width: 768px) {
+    .tution-nav{
+        margin: 33px 40px 33px 40px;
+    }
+    .search-row{
+        padding: 0px 40px !important;
+    }
+    .search{
+        width: 100%;
+    }
+    .banner-web{
+        display: none !important;
+    }
+    .banner-mobile{
+        display: block !important;
+    }
+    .right-col{
+        display: none;
+    }
+    .get-started{
+        padding: 40px;
+    }
+    .main-title{
+        font-size: 31px;
+        width: 100%;
+    }
+    .main-description{
+        width: 100%;
+    }
+    .banner-buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+  }
+  
+  @media (max-width:928px) and (min-width:769px) {
+      .varal-nav{
+        padding: 10px 30px 10px 53px;
+      }
+      nav ul li {
+        display: inline-block;
+        line-height: 60px;
+        margin: 0px 11px;
+    }
+    .start-btn{
+        width: 165px;
+        height: 50px;
+    }
+    .search-row{
+        padding-right: 40px;
+    }
+    .mission-title::before{
+        display: none;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    section {
+      background-position: top right;
+    }
+  
+    label.logo {
+      font-size: 30px;
+      
+    }
+    nav ul li a {
+      color: white !important;
+      font-size: 16px;
+    }
+    .hamberger-btn {
+      display: block;
+    }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #4ea0a1;
+      top: 125px;
+      right: 100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li {
+      display: block;
+    }
+    a:hover {
+      background: linear-gradient(
+        93deg,
+        rgba(94, 129, 207, 1) 16%,
+        rgba(94, 161, 187, 1) 55%
+      );
+    }
+  
+    #check:checked ~ ul {
+      right: 0px;
+      z-index: 100;
+    }
+    .fancy-radius {
+      display: none;
+    }
+  
+    .greeting {
+      font-size: 20px;
+      font-weight: bold;
+      position: relative;
+      color: whitesmoke;
+      left: 0px;
+      top: 20px;
+      background: rgb(109, 157, 162);
+      background: linear-gradient(
+        256deg,
+        rgba(109, 157, 162, 1) 18%,
+        rgba(94, 161, 187, 1) 58%
+      );
+      transition: all 0.6s;
+      z-index: 99;
+    }
+  }
