@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Baloo Chettan 2', cursive; */
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +11,7 @@
 }
 body {
     
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 .tution-nav {
     background: #fff;
@@ -21,6 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 label.logo {
   color: cornsilk;
   font-size: 35px;
@@ -41,16 +43,16 @@ label.logo {
     font-weight: 800;
     margin: 5px 0 25px 0;
     width: calc(100% - 100px);
+    color: #3f3a64;
 }
 .main-title span{
     text-decoration:underline 5px solid #ffa500;
 }
 .main-description{
-    font-size: 20px;
-    color: #2f3a85;
-    font-weight: 600;
+    font-size: 17px;
+    color: #8c89a2;
+    font-weight: 400;
     margin-top: 24px;
-    opacity: .6;
     width: calc(100% - 100px);
 }
 .get-started{
@@ -64,7 +66,7 @@ label.logo {
 }
 .sub-title{
     font-size: 21px;
-    color: #69DADB;
+    color: #20ad96;
     font-weight: 300;
 }
 .banner-btn{
@@ -80,6 +82,127 @@ label.logo {
 .nav-links{
     text-decoration: none;
     color: #171718;
+}
+.feature-h2{
+    color: #3f3a64;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+.smart-span{
+    color: #20ad96;
+    font-weight: 400;
+}
+.custom-border{
+    width: 100%;
+    height: 10px;
+    background-color: #20ad96;
+    margin-top: 20px;
+}
+.feature-row{
+    margin-top: 50px !important;
+    padding: 0 40px;
+}
+.feature-description{
+    color: #696969;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.feature-caption{
+    color: #3f3a64;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.about-main{
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 30px;
+    color: #3f3a64;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.about-content{
+    position: relative;
+    z-index: 99;
+    max-width: 420px;
+}
+.about-description{
+    color: #696969;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.about-span{
+    font-weight: 400;
+    color: #20ad96;
+}
+.about-1{
+    max-width: 100%;
+    transition: all 1s ease;
+}
+.about-1:hover{
+    -webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.about-link{
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    padding: 3px 0;
+    color: #20ad96;
+    background-color: transparent;
+    text-decoration: none;
+}
+.about-image{
+    position: relative;
+    z-index: 9;
+    padding-right: 55px;
+}
+.about-image-second{
+    position: relative;
+    z-index: 9;
+    padding-right: 55px;
+}
+.about-image-2{
+    position: absolute;
+    top: -90px;
+    right: -73px;
+    border-radius: 5px;
+}
+.about{
+    margin-top: 150px;
+    margin-bottom: 80px;
+    padding: 40px 78px 40px 78px;
+}
+.about-second{
+    margin-bottom: 200px;
+}
+.custom-titles{
+    color: #696969;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer{
+    background-color: #20ad96;
+    height: 50px;
+}
+footer{
+    height: 100%;
+}
+.footer-site{
+    font-size: 15px;
+    color: #fff;
+    height: 100%;
+    text-decoration: none;
 }
 
 nav ul {
@@ -117,7 +240,7 @@ nav ul {
     display: none;
   }
   .start-btn{
-      background-color: #69DADB;
+      background-color: #20ad96;
       color: #fff;
       width: 190px;
       height: 58px;
@@ -130,5 +253,6 @@ nav ul {
   
   }
   .addCSS{
-      overflow-y: hidden;
+    height: 100%;
+    overflow-y: hidden;
   }

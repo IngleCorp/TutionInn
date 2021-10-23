@@ -32,6 +32,34 @@
         justify-content: center;
         margin-top: 20px;
     }
+    .feat{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .feature-h2{
+      line-height: 40px;
+    }
+    .about{
+      padding: 40px 21px 40px 21px;
+      margin-top: 70px;
+    }
+    .about-image-2{
+      display: none;
+    }
+    .about-image{
+      margin-top: 30px;
+    }
+    .about-main{
+      font-size: 38px;
+    }
+    .about-image{
+      padding-right: 0;
+    }
+    .about-image-second{
+      padding-right: 0;
+      padding: 0 15px;
+    }
     
   }
   
@@ -118,4 +146,9 @@
       transition: all 0.6s;
       z-index: 99;
     }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1599px){
+.about-image .about-image-2 {
+    right: 0;
+}
   }
