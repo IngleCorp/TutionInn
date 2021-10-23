@@ -147,11 +147,11 @@ label.logo {
     transition: all 1s ease;
 }
 .about-1:hover{
-    -webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	transform: scale(1.2);
+    -webkit-transform: scale(1.12);
+	-moz-transform: scale(1.12);
+  -ms-transform: scale(1.12);
+	-o-transform: scale(1.12);
+	transform: scale(1.12);
 }
 .about-link{
     font-weight: 700;
