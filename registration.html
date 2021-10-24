@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tution Inn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--font awesome icons to get hamberger menu-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body id="body">
+    <!--Nav bar starts here-->
+    <nav class="tution-nav">
+      <label class="logo"
+        ><img src="assets/images//1.png" class="logo-img" alt="" srcset=""
+      /></label>
+      <input type="checkbox" id="check" />
+      <label
+        for="check"
+        class="hamberger-btn"
+        id="checkB"
+        onclick="addClass()"
+        onclick="remove()"
+      >
+        <i class="fas fa-bars" style="color: black !important"></i>
+      </label>
+      <ul>
+        <li><a href="index.html" class="nav-links">Home</a></li>
+        <li><a href="index.html" class="nav-links">About</a></li>
+        <li><a href="index.html" class="nav-links">Contact Us</a></li>
+
+        <li>
+          <button
+            onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSc4_DiT6AramvaCE-UP99tWWBLbGBF9etXFtfqPF_SKDPt-aw/viewform?usp=sf_link'"
+            class="start-btn"
+          >
+            Become A Tutor
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!--Nav bar ends here-->
+
+    <!-- form section start -->
+    <section class="reg-form">
+      <div class="container">
+        <div class="row form-row">
+          <div class="form-wrappers">
+            <h3 class="form-title">Register</h3>
+            <form action="">
+              <div class="single-input">
+                <label for="name">Name <span class="form-req">*</span> </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  class="form-input"
+                />
+              </div>
+              <div class="single-input">
+                <label for="place">Place </label>
+                <input
+                  type="text"
+                  id="place"
+                  name="place"
+                  placeholder="Your Place"
+                  class="form-input"
+                />
+              </div>
+              <div class="single-input">
+                <label for="phone"
+                  >Phone <span class="form-req">*</span>
+                </label>
+                <input
+                  type="number"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone Number"
+                  class="form-input"
+                />
+              </div>
+              <div class="single-input">
+                <label for="email"
+                  >Email <span class="form-req">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Id"
+                  class="form-input"
+                />
+              </div>
+              <div class="single-input d-flex flex-column">
+                <label for="qualification" class="form-qualification"
+                  >Your Qualification <span class="form-req">*</span>
+                </label>
+                <select
+                  name="qualification"
+                  id="qualification"
+                  class="form-qua"
+                  onchange="test(this)"
+                >
+                  <option value="graduation" class="from-q-option">
+                    graduation
+                  </option>
+
+                  <option value="B-ed" class="from-q-option">B Ed</option>
+                  <option value="D-Ed" class="from-q-option">D Ed</option>
+                  <option value="M-Ed" class="from-q-option">M Ed</option>
+                  <option value="other" class="from-q-option">Other</option>
+                </select>
+                <label for="other-sub"></label>
+                <input
+                  type="text"
+                  id="other-s"
+                  name="other-sub"
+                  placeholder="Please specify"
+                  class="form-input other-sub"
+                />
+              </div>
+              <div class="single-input">
+                <label for="exp"
+                  >Your Experience<span class="form-req">*</span>
+                </label>
+                <input
+                  type="number"
+                  id="exp"
+                  name="exp"
+                  placeholder="In Years"
+                  class="form-input"
+                />
+              </div>
+              <div class="single-input d-flex flex-column">
+                <label for="subject" class="form-sub"
+                  >Subject<span class="form-req">*</span>
+                </label>
+                <div class="select-wrap form-down">
+                  <select name="subject" id="subjectS" class="form-qua">
+                    <option value="graduation" class="from-sub-option">
+                      English
+                    </option>
+                    <option value="Mathematics" class="from-q-option">
+                      Mathematics
+                    </option>
+                    <option value="D-Ed" class="from-q-option">Physics</option>
+                    <option value="M-Ed" class="from-q-option">
+                      Chemistry
+                    </option>
+                    <option value="" class="from-q-option">Biology</option>
+                    <option value="Social" class="from-sub-option">
+                      Social
+                    </option>
+                    <option value="malayalam" class="from-sub-option">
+                      Malayalam
+                    </option>
+                    <option value="hindi" class="from-sub-option">Hindi</option>
+                    <option value="arabic" class="from-sub-option">
+                      Arabic
+                    </option>
+                    <option value="urdu" class="from-sub-option">Urdu</option>
+                    <option value="it" class="from-sub-option">IT</option>
+                    <option value="Spoken English" class="from-sub-option">
+                      Spoken English
+                    </option>
+                    <option
+                      value="Personality Development Training"
+                      class="from-sub-option"
+                    >
+                      Personality Development Training
+                    </option>
+                    <option value="IELTS Coaching" class="from-sub-option">
+                      IELTS Coaching
+                    </option>
+                    <option
+                      value="other"
+                      class="from-sub-option"
+                      id="other-sub"
+                    >
+                      other
+                    </option>
+                    <label for="other-sub"></label>
+                    <input
+                      type="text"
+                      id="other-s"
+                      name="other-sub"
+                      placeholder="Please specify"
+                      class="form-input"
+                    />
+                  </select>
+                </div>
+              </div>
+              <div class="single-input d-flex flex-column">
+                <label for="class" class="form-class"
+                  >Class <span class="form-req">*</span>
+                </label>
+                <select name="class" id="class" class="form-class-list">
+                  <option value="5" class="from-q-option">5</option>
+
+                  <option value="6" class="from-q-option">6</option>
+                  <option value="7" class="from-q-option">7</option>
+                  <option value="8" class="from-q-option">8</option>
+                  <option value="9" class="from-q-option">9</option>
+                  <option value="10" class="from-cls-option">10</option>
+                  <option value="+1" class="from-cls-option">+1</option>
+                  <option value="+2" class="from-cls-option">+2</option>
+                  <option value="graduation" class="from-cls-option">
+                    Graduation
+                  </option>
+                  <option value="Post-Graduation" class="from-cls-option">
+                    Post Graduation
+                  </option>
+                  <option value="" class="from-cls-option">Other</option>
+                </select>
+              </div>
+              <div class="single-input d-flex flex-column">
+                <label for="time" class="form-time">Availble Time</label>
+                <select name="time" id="time" class="form-qua">
+                  <option value="06 AM to 07 AM" class="form-time-option">
+                    06 AM to 07 AM
+                  </option>
+                  <option value="07 AM to 08 AM" class="form-time-option">
+                    07 AM to 08 AM
+                  </option>
+                  <option value="08 AM to 09 AM" class="form-time-option">
+                    08 AM to 09 AM
+                  </option>
+                  <option value="09 AM to 10 AM" class="form-time-option">
+                    09 AM to 10 AM
+                  </option>
+                  <option value="10 AM to 11 AM" class="form-time-option">
+                    10 AM to 11 AM
+                  </option>
+                  <option value="11 AM to 12 PM" class="form-time-option">
+                    11 AM to 12 PM
+                  </option>
+
+                  <option value="01 PM to 02 PM" class="form-time-option">
+                    01 PM to 02 PM
+                  </option>
+                  <option value="02 PM to 03 PM" class="form-time-option">
+                    02 PM to 03 PM
+                  </option>
+                  <option value="03 PM to 04 PM" class="form-time-option">
+                    03 PM to 04 PM
+                  </option>
+                  <option value="04 PM to 05 PM" class="form-time-option">
+                    04 PM to 05 PM
+                  </option>
+                  <option value="05 PM to 06 PM" class="form-time-option">
+                    05 PM to 06 PM
+                  </option>
+                  <option value="06 PM to 07 PM" class="form-time-option">
+                    06 PM to 07 PM
+                  </option>
+                  <option value="07 PM to 08 PM" class="form-time-option">
+                    07 PM to 08 PM
+                  </option>
+                  <option value="08 PM to 09 PM" class="form-time-option">
+                    08 PM to 09 PM
+                  </option>
+                  <option value="09 PM to 10 PM" class="form-time-option">
+                    09 PM to 10 PM
+                  </option>
+                  <option value="" class="form-time-option">Other</option>
+                </select>
+              </div>
+              <div class="single-input">
+                <label for="phone"
+                  >Expected Hourly Charge <span class="form-req">*</span>
+                </label>
+                <input
+                  type="number"
+                  id="cost"
+                  name="cost"
+                  placeholder="₹ Your Answer"
+                  class="form-input"
+                />
+              </div>
+              <div class="single-input">
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="cost"
+                  placeholder="₹ Your Answer"
+                  class="form-input-term"
+                  onKeyup="checkForm()"
+                />
+                <label for="phone"
+                  >You accept all our terms and conditions by submitting<span
+                    class="form-req"
+                    >*</span
+                  >
+                </label>
+              </div>
+              <div
+                class="
+                  sub-btn
+                  d-flex
+                  justify-content-center
+                  align-content-center
+                "
+              >
+                <button type="submit" class="form-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="form.js"></script>
+  </body>
+</html>
