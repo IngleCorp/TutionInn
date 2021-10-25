@@ -114,24 +114,34 @@
                 />
               </div>
               <div class="single-input d-flex flex-column">
-                <label for="qualification" class="form-qualification"
+                <label for="qualification" class="form-qualification qua"
                   >Your Qualification <span class="form-req">*</span>
                 </label>
-                <select
-                  name="qualification"
-                  id="qualification"
-                  class="form-qua"
-                  onchange="test(this)"
-                >
-                  <option value="graduation" class="from-q-option">
-                    graduation
-                  </option>
-
-                  <option value="B-ed" class="from-q-option">B Ed</option>
-                  <option value="D-Ed" class="from-q-option">D Ed</option>
-                  <option value="M-Ed" class="from-q-option">M Ed</option>
-                  <option value="other" class="from-q-option">Other</option>
-                </select>
+                <div class="grad-group">
+                    <div class="input-group d-flex align-content-center">
+                        <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                        <label for="grad" class="grad">Graduation</label>
+                      </div>
+                      <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                          <label for="grad" class="grad">B Ed</label>
+                        </div>
+                        <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                          <label for="grad" class="grad">D Ed</label>
+                        </div>
+                        <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                          <label for="grad" class="grad">M Ed</label>
+                        </div>
+                        <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad" name="other"
+                          id="other-s"
+                          class="form-qua"
+                          onchange="test(this)">
+                          <label for="grad" class="grad">Other</label>
+                        </div>
+                </div>
                 <label for="other-sub"></label>
                 <input
                   type="text"
@@ -154,140 +164,208 @@
                 />
               </div>
               <div class="single-input d-flex flex-column">
-                <label for="subject" class="form-sub"
+                <label for="subject" class="form-sub qua"
                   >Subject<span class="form-req">*</span>
                 </label>
                 <div class="select-wrap form-down">
-                  <select name="subject" id="subjectS" class="form-qua">
-                    <option value="graduation" class="from-sub-option">
-                      English
-                    </option>
-                    <option value="Mathematics" class="from-q-option">
-                      Mathematics
-                    </option>
-                    <option value="D-Ed" class="from-q-option">Physics</option>
-                    <option value="M-Ed" class="from-q-option">
-                      Chemistry
-                    </option>
-                    <option value="" class="from-q-option">Biology</option>
-                    <option value="Social" class="from-sub-option">
-                      Social
-                    </option>
-                    <option value="malayalam" class="from-sub-option">
-                      Malayalam
-                    </option>
-                    <option value="hindi" class="from-sub-option">Hindi</option>
-                    <option value="arabic" class="from-sub-option">
-                      Arabic
-                    </option>
-                    <option value="urdu" class="from-sub-option">Urdu</option>
-                    <option value="it" class="from-sub-option">IT</option>
-                    <option value="Spoken English" class="from-sub-option">
-                      Spoken English
-                    </option>
-                    <option
-                      value="Personality Development Training"
-                      class="from-sub-option"
-                    >
-                      Personality Development Training
-                    </option>
-                    <option value="IELTS Coaching" class="from-sub-option">
-                      IELTS Coaching
-                    </option>
-                    <option
-                      value="other"
-                      class="from-sub-option"
-                      id="other-sub"
-                    >
-                      other
-                    </option>
-                    <label for="other-sub"></label>
-                    <input
-                      type="text"
-                      id="other-s"
-                      name="other-sub"
-                      placeholder="Please specify"
-                      class="form-input"
-                    />
-                  </select>
+                    <div class="grad-group">
+                        <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">English</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                              <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                              <label for="grad" class="grad">Mathematics</label>
+                            </div>
+                            <div class="input-group d-flex align-content-center">
+                              <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                              <label for="grad" class="grad">Physics</label>
+                            </div>
+                            <div class="input-group d-flex align-content-center">
+                              <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                              <label for="grad" class="grad">Chemistry</label>
+                            </div>
+                            <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">Biology</label>
+                              </div>
+                              <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">Social</label>
+                              </div>
+                              <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">Chemistry</label>
+                              </div>
+                              <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">Malayalam</label>
+                              </div>
+                            <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">Hindi</label>
+                              </div>
+                              <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">Arabic</label>
+                              </div>
+                              <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">Urdu</label>
+                              </div>
+                              <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">IT</label>
+                              </div>
+                              <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">Spoken English</label>
+                              </div>
+                              <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">Personality Development Training</label>
+                              </div>
+                              <div class="input-group d-flex align-content-center">
+                                <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                                <label for="grad" class="grad">IELTS Coaching</label>
+                              </div>
+                            <div class="input-group d-flex align-content-center">
+                              <input type="checkbox" value="graduation" class="from-q-option" id="grad" name="other"
+                              id="other-s"
+                              class="form-qua"
+                              onchange="test(this)">
+                              <label for="grad" class="grad">Other</label>
+                            </div>
+                    </div>
                 </div>
               </div>
               <div class="single-input d-flex flex-column">
-                <label for="class" class="form-class"
+                <label for="class" class="form-class qua"
                   >Class <span class="form-req">*</span>
                 </label>
-                <select name="class" id="class" class="form-class-list">
-                  <option value="5" class="from-q-option">5</option>
-
-                  <option value="6" class="from-q-option">6</option>
-                  <option value="7" class="from-q-option">7</option>
-                  <option value="8" class="from-q-option">8</option>
-                  <option value="9" class="from-q-option">9</option>
-                  <option value="10" class="from-cls-option">10</option>
-                  <option value="+1" class="from-cls-option">+1</option>
-                  <option value="+2" class="from-cls-option">+2</option>
-                  <option value="graduation" class="from-cls-option">
-                    Graduation
-                  </option>
-                  <option value="Post-Graduation" class="from-cls-option">
-                    Post Graduation
-                  </option>
-                  <option value="" class="from-cls-option">Other</option>
-                </select>
+                <div class="grad-group">
+                    <div class="input-group d-flex align-content-center">
+                        <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                        <label for="grad" class="grad">5</label>
+                      </div>
+                      <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                          <label for="grad" class="grad">6</label>
+                        </div>
+                        <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                          <label for="grad" class="grad">7</label>
+                        </div>
+                        <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                          <label for="grad" class="grad">8</label>
+                        </div>
+                        <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">9</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">10</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">+1</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">+2</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">Graduation</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">Post Graduation</label>
+                          </div>
+                        <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad" name="other"
+                          id="other-s"
+                          class="form-qua"
+                          onchange="test(this)">
+                          <label for="grad" class="grad">Other</label>
+                        </div>
+                </div>
               </div>
               <div class="single-input d-flex flex-column">
-                <label for="time" class="form-time">Availble Time</label>
-                <select name="time" id="time" class="form-qua">
-                  <option value="06 AM to 07 AM" class="form-time-option">
-                    06 AM to 07 AM
-                  </option>
-                  <option value="07 AM to 08 AM" class="form-time-option">
-                    07 AM to 08 AM
-                  </option>
-                  <option value="08 AM to 09 AM" class="form-time-option">
-                    08 AM to 09 AM
-                  </option>
-                  <option value="09 AM to 10 AM" class="form-time-option">
-                    09 AM to 10 AM
-                  </option>
-                  <option value="10 AM to 11 AM" class="form-time-option">
-                    10 AM to 11 AM
-                  </option>
-                  <option value="11 AM to 12 PM" class="form-time-option">
-                    11 AM to 12 PM
-                  </option>
-
-                  <option value="01 PM to 02 PM" class="form-time-option">
-                    01 PM to 02 PM
-                  </option>
-                  <option value="02 PM to 03 PM" class="form-time-option">
-                    02 PM to 03 PM
-                  </option>
-                  <option value="03 PM to 04 PM" class="form-time-option">
-                    03 PM to 04 PM
-                  </option>
-                  <option value="04 PM to 05 PM" class="form-time-option">
-                    04 PM to 05 PM
-                  </option>
-                  <option value="05 PM to 06 PM" class="form-time-option">
-                    05 PM to 06 PM
-                  </option>
-                  <option value="06 PM to 07 PM" class="form-time-option">
-                    06 PM to 07 PM
-                  </option>
-                  <option value="07 PM to 08 PM" class="form-time-option">
-                    07 PM to 08 PM
-                  </option>
-                  <option value="08 PM to 09 PM" class="form-time-option">
-                    08 PM to 09 PM
-                  </option>
-                  <option value="09 PM to 10 PM" class="form-time-option">
-                    09 PM to 10 PM
-                  </option>
-                  <option value="" class="form-time-option">Other</option>
-                </select>
+                <label for="time" class="form-time qua">Availble Time<span class="form-req">*</span></label>
+                <div class="grad-group">
+                    <div class="input-group d-flex align-content-center">
+                        <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                        <label for="grad" class="grad">06 AM to 07 AM</label>
+                      </div>
+                      <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                          <label for="grad" class="grad">07 AM to 08 AM</label>
+                        </div>
+                        <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                          <label for="grad" class="grad">08 AM to 09 AM</label>
+                        </div>
+                        <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                          <label for="grad" class="grad">09 AM to 10 AM</label>
+                        </div>
+                        <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">10 AM to 11 AM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">11 AM to 12 PM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">01 PM to 02 PM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">02 PM to 03 PM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">03 PM to 04 PM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">04 PM to 05 PM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">05 PM to 06 PM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">06 PM to 07 PM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">07 PM to 08 PM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">08 PM to 09 PM</label>
+                          </div>
+                          <div class="input-group d-flex align-content-center">
+                            <input type="checkbox" value="graduation" class="from-q-option" id="grad">
+                            <label for="grad" class="grad">09 PM to 10 PM</label>
+                          </div>
+                        <div class="input-group d-flex align-content-center">
+                          <input type="checkbox" value="graduation" class="from-q-option" id="grad" name="other"
+                          id="other-s"
+                          class="form-qua"
+                          onchange="test(this)">
+                          <label for="grad" class="grad">Other</label>
+                        </div>
+                </div>
               </div>
-              <div class="single-input">
+              <div class="single-input position-relative">
                 <label for="phone"
                   >Expected Hourly Charge <span class="form-req">*</span>
                 </label>
@@ -295,9 +373,10 @@
                   type="number"
                   id="cost"
                   name="cost"
-                  placeholder="₹ Your Answer"
+                  placeholder="Your Answer"
                   class="form-input"
                 />
+                <span class="unit">₹</span>
               </div>
               <div class="single-input">
                 <input
@@ -403,18 +482,18 @@
           </div>
         </div>
       </section>
-      <section class="footer">
-        <div class="container-fluid h-100">
-          <footer>
-            <a
-              href="#"
-              class="footer-site d-flex justify-content-center align-items-center"
-            >
-              www.tuition.com
-            </a>
-          </footer>
-        </div>
-      </section>
+       <section class="footer">
+      <div class="container-fluid h-100">
+        <footer>
+          <a
+            href="#"
+            class="footer-site d-flex justify-content-center align-items-center"
+          >
+            www.tuition.com
+          </a>
+        </footer>
+      </div>
+    </section>
 
     <script src="main.js"></script>
     <script
