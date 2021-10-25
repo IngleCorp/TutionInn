@@ -60,6 +60,27 @@
       padding-right: 0;
       padding: 0 15px;
     }
+    .about-image-1{
+      padding: 10px;
+    }
+    .about-image-3{
+      padding: 10px;
+    }
+    .feature-wrapper{
+      background-color: aliceblue;
+    }
+    .reg-xp{
+      color: #3f3a64;
+    }
+    .dis{
+      display: block;
+    }
+    .dis-none{
+      display: none;
+    }
+    .reg-play{
+      display: none;
+    }
 
     .form-row{
       padding: 20px 20px;

@@ -91,6 +91,12 @@ label.logo {
     font-weight: 700;
     text-align: center;
 }
+.feature-bg{
+    padding: 10px 50px;
+    background: aliceblue;
+    border-radius: 11px;
+    
+}
 .smart-span{
     color: #20ad96;
     font-weight: 400;
@@ -142,6 +148,9 @@ label.logo {
     font-weight: 400;
     color: #20ad96;
 }
+.dis-none{
+    display:block;
+}
 .about-1{
     max-width: 100%;
     transition: all 1s ease;
@@ -152,6 +161,18 @@ label.logo {
   -ms-transform: scale(1.12);
 	-o-transform: scale(1.12);
 	transform: scale(1.12);
+}
+.about-image-1{
+    transition: all 1s ease;
+}
+.about-image-1:hover{
+    transform: scale(1.1);
+}
+.about-image-second{
+    transition: all 1s ease;
+}
+.about-image-second:hover{
+    transform: scale(1.12);
 }
 .about-link{
     font-weight: 700;
@@ -166,6 +187,15 @@ label.logo {
     position: relative;
     z-index: 9;
     padding-right: 55px;
+}
+.dis{
+    display: none;
+}
+.reg-xp{
+    color: #fff;
+}
+.about-image-3{
+    padding: 100px;
 }
 .about-image-second{
     position: relative;
@@ -361,6 +391,47 @@ footer{
 }
 .address{
     margin-left: 15px;
+}
+.reg-img{
+    width: auto;
+    height: 250px;
+}
+.reg-banner{
+    padding-top: 130px;
+    margin-bottom: 60px;
+    background-color: aliceblue;
+    padding-bottom: 30px;
+}
+.reg-below{
+    font-size: 18px;
+    font-weight: 400;
+    color: #20ad96;
+}
+.reg-play{
+    height: auto;
+    width: 100px;
+    position: absolute;
+    left: 77px;
+    z-index: 9;
+    transition: all 2s;
+}
+.reg-play:hover{
+    transform: rotate(90deg);
+}
+.reg-banner-title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 30px;
+    color: #3f3a64;
+    font-weight: 700;
+    margin-top: 15px;
+    position: relative;
+    z-index: 99;
+    pointer-events: none;
+}
+.reg-span{
+    font-weight: 200;
 }
 
 nav ul {
