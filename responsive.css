@@ -8,6 +8,12 @@
     .search{
         width: 100%;
     }
+    .subject-mobile{
+      flex-direction: column !important;
+    }
+    .grad-group{
+      margin: 0px 10px;
+    }
     .banner-web{
         display: none !important;
     }
