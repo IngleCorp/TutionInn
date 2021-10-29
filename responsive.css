@@ -17,8 +17,15 @@
     .right-col{
         display: none;
     }
+    .about{
+      margin-bottom: 0px;
+    }
+    
     .get-started{
         padding: 40px;
+    }
+    .about-1{
+      height: 100%;
     }
     .main-title{
         font-size: 31px;
@@ -51,7 +58,7 @@
       margin-top: 30px;
     }
     .about-main{
-      font-size: 38px;
+      font-size: 34px;
     }
     .about-image{
       padding-right: 0;
@@ -73,7 +80,7 @@
       color: #3f3a64;
     }
     .dis{
-      display: block;
+      display: flex;
     }
     .dis-none{
       display: none;
