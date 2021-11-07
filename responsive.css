@@ -1,12 +1,16 @@
 @media screen and (max-width: 768px) {
     .tution-nav{
-        margin: 33px 40px 33px 40px;
+        margin: 33px 27px 33px 27px;
     }
     .search-row{
         padding: 0px 40px !important;
     }
     .search{
         width: 100%;
+    }
+    .sub-title{
+      display: flex;
+      justify-content: center;
     }
     .subject-mobile{
       flex-direction: column !important;

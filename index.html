@@ -27,46 +27,49 @@
 
   <body id="body">
     <!--Nav bar starts here-->
-    <nav class="tution-nav">
-      <label class="logo"
-        ><img src="assets/images//1.png" class="logo-img" alt="" srcset=""
-      /></label>
-      <input type="checkbox" id="check" />
-      <label
-        for="check"
-        class="hamberger-btn"
-        id="checkB"
-        onclick="addClass()"
-        onclick="remove()"
-      >
-        <i class="fas fa-bars" style="color: black !important"></i>
-      </label>
-      <ul>
-        <li><a href="index.html" class="nav-links">Home</a></li>
-        <li><a href="#aboutus" class="nav-links">About</a></li>
-        <li><a href="#" class="nav-links">Contact Us</a></li>
-
-        <li>
-          <button
-            onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSc4_DiT6AramvaCE-UP99tWWBLbGBF9etXFtfqPF_SKDPt-aw/viewform?usp=sf_link'"
-            class="start-btn"
-          >
-            Become A Tutor
-          </button>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="tution-nav">
+        <label class="logo"
+          ><img src="assets/images/icons/logo-new.png" class="logo-img" alt="" srcset=""
+        /></label>
+        <input type="checkbox" id="check" />
+        <label
+          for="check"
+          class="hamberger-btn"
+          id="checkB"
+          onclick="addClass()"
+          onclick="remove()"
+        >
+          <i class="fas fa-bars" style="color: black !important"></i>
+        </label>
+        <ul>
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="#aboutus" class="nav-links">About</a></li>
+          <li><a href="#" class="nav-links">Contact Us</a></li>
+  
+          <li>
+            <button
+              onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSc4_DiT6AramvaCE-UP99tWWBLbGBF9etXFtfqPF_SKDPt-aw/viewform?usp=sf_link'"
+              class="start-btn"
+            >
+              Become A Tutor
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
     <!--Nav bar ends here-->
 
     <!-- main-banner -->
     <section class="get-started">
-      <div class="wrapper d-flex">
+      <div class="container wrapper d-flex">
         <div class="left-col w-100">
           <h1 class="main-title" data-aos="fade-up" data-aos-duration="1500">
             When it comes to tutoring, we deliver
           </h1>
           <img
-            src="assets/images/illustrations/525994012-01.png"
+            src="assets/images/illustrations/banner-img-01.png"
             class="banner-img banner-mobile"
             alt="banner-img"
             srcset=""
@@ -88,7 +91,7 @@
         </div>
         <div class="right-col w-100">
           <img
-            src="assets/images/illustrations/525994012-01.png"
+            src="assets/images/illustrations/banner-img-01.png"
             class="banner-img banner-web"
             alt="banner-img"
             srcset="" data-aos="fade-down" data-aos-duration="2000"
