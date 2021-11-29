@@ -519,10 +519,14 @@ a {
 
 .tutor-features {
     border-radius: 53% !important;
-    background-color: #20ad96;
+    background-color: #ffffff;
     padding: 0px !important;
-    border: 6px solid #44726a;
+    border: 3px solid #44726a;
     transition: all 1s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tutor-features:hover {
@@ -666,7 +670,7 @@ h4 {
 }
 
 .accordion_one .panel .panel-heading a.collapsed {
-    color: #999999;
+    color: #181818;
     display: block;
     padding: 12px 30px;
     border-top: 0px
